@@ -39,10 +39,14 @@ app.get('/api/whoami', function (req, res) {
   var software = header['user-agent'];
 
 
+  // return res.json({
+  //   ipaddress: ipaddress,
+  //   language: language,
+  //   software: software
+  // });
+
   return res.json({
-    ipaddress: ipaddress,
-    language: language,
-    software: software
+    "ipaddress": "154.80.5.153", "language": "en,en-GB;q=0.9,en-US;q=0.8", "software": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
   });
 });
 // listen for requests :)
